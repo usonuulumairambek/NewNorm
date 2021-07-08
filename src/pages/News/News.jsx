@@ -97,7 +97,6 @@ export default function News() {
       })
   }, [])
 
-  const Date = "16.03.2021"
   return (
     <div className="news">
       <div data-aos="fade-up" className="news_title">
@@ -119,17 +118,20 @@ export default function News() {
 
         {newsContents
           .map((news) => {
-            const { created_date, title, text, id, images } = news
+            const { created_date, date, title, text, id, images } = news
             const year = created_date.slice(0, 4)
             const month = created_date.slice(5, 7)
             const day = created_date.slice(8, 10)
+            const dateInNews = date ? date : `${day}.${month}.${year}`
+
             let newsSeperatedText = text.split("|newline")
             let newsSeperatedImages = [...images]
 
+            debugger
             return (
               <React.Fragment key={id}>
                 <div className="news__item">
-                  <span className="news__date">{`${day}.${month}.${year}`}</span>
+                  <span className="news__date">{dateInNews}</span>
                   <p className="news__title">{title}</p>
                   <div className="news__line news__line-1" />
                   <span className="news__info">
@@ -148,7 +150,6 @@ export default function News() {
                                   (imageAfterThisText =
                                     newsSeperatedImages[0].image)
                                 newsSeperatedImages.shift()
-                                debugger
                                 return (
                                   <React.Fragment>
                                     <p className="news__paragraphs-text">
