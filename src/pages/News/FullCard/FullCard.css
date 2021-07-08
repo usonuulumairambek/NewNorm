@@ -1,0 +1,24 @@
+.fullcard {
+  padding: 2% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.complex__info .photo{
+width: 50%;
+margin-bottom: 20px;
+
+}
+.fullcard__title{
+  font-size: 3em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fullcard__subtitle{
+  padding: 0 1% 0 1%;
+  font-size: 1.5em;
+  font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+
+}
+.container{
+  max-width: 1150px;
+}

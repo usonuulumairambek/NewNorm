@@ -1,0 +1,50 @@
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+.add {
+  position: relative;
+  display: flex;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.add__error-text {
+  color: red;
+}
+
+.add__title {
+  text-align: center;
+}
+.add__subtitle {
+  color: rgb(58, 53, 53);
+  margin-top: 25px;
+}
+.form-control-file {
+  margin-top: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 380px;
+}
+
+.form-control-file {
+  margin-bottom: 40px;
+  color: black;
+}
+
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

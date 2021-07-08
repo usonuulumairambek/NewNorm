@@ -1,0 +1,30 @@
+.license__modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.license__modal.active {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.license__modal__content.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal__img {
+  margin-top: 50px;
+  max-width: 500px;
+}

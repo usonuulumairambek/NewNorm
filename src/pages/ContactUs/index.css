@@ -1,0 +1,119 @@
+.aboutUs {
+  background-color: #e5e5e5;
+  margin-top: -18px;
+}
+
+.aboutUs__header {
+  background: linear-gradient(65.35deg, #004dac 26%, #444444 107.04%);
+  height: 50px;
+  width: 100%;
+}
+
+.aboutUs__header p {
+  font-size: 32px;
+}
+.aboutUs__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tittle {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.aboutUsContent {
+  background-color: #b7b7b7;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  margin: 0 35px 15px 15px;
+  font-size: 19px;
+  padding: 35px;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+iframe {
+  max-width: 700px;
+  border: 1px solid darkgrey;
+  margin: 0 auto;
+}
+
+.secondTittle {
+  font-size: 28px;
+  padding: 20px 20vw;
+  text-align: center;
+}
+.mapInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 105px;
+  padding-top: 40px;
+}
+.adressTittle {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.divForMap {
+  padding: 0 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+.containerForYandexMap {
+  max-width: 800px;
+  margin: 10px 20px;
+}
+@media (max-width: 1200px) {
+  .aboutUs {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .aboutUs {
+    max-width: 750px;
+  }
+  .map {
+    flex-direction: column;
+  }
+  .mapInfo {
+    padding-top: 0;
+  }
+  iframe {
+    max-width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutUs {
+    max-width: none;
+  }
+  .map {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .mapInfo {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  iframe {
+    max-width: 340px;
+  }
+}
+@media (max-width: 570px) {
+  .containerForYandexMap {
+    max-width: 320px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}

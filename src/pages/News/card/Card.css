@@ -1,0 +1,13 @@
+.card {
+  /* border: none; */
+  max-width: 500px;
+padding: 1%;
+}
+.card__title {
+  color: #2e373b;
+  font-size: 21px;
+  font-weight: 500;
+}
+.card__date {
+  color: #f6404f;
+}
