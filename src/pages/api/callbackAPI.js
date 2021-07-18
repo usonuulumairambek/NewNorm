@@ -19,14 +19,14 @@ export const sendEquipmentForm = (data) => {
 }
 
 export const sendNewNews = (data) => {
-  axios.post("http://185.29.184.52:3000/api/news/", data).catch((error) => {
+  axios.post("https://a57026bb14c3.ngrok.io/api/news/", data).catch((error) => {
     console.log(error)
   })
 }
 
 export const getNewNews = (setNewsContents) => {
   axios
-    .get("http://185.29.184.52:3000/api/news/")
+    .get("https://a57026bb14c3.ngrok.io/api/news/")
     .then((response) => {
       setNewsContents(response.data)
     })

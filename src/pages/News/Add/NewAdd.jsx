@@ -75,6 +75,15 @@ function NewAdd() {
     <div className="add">
       <form action="#">
         <h2 className="add__title">Добавить новости</h2>
+        <span className="add__subtitle">Дата:</span>
+        <input
+          type="text"
+          className={`form-control`}
+          placeholder="Введите дату"
+          onChange={changeHandler}
+          name="date"
+          value={news.date}
+        />
 
         <span className="add__subtitle">Заголовок:</span>
         <input
